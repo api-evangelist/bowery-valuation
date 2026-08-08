@@ -1,0 +1,68 @@
+# Bowery Valuation
+
+> Technology-enabled commercial real estate appraisal firm headquartered in New York, NY.
+> Bowery pairs state-certified appraisers with a proprietary cloud platform for comparable-sales
+> research, rent-roll and income analysis, mobile inspection capture, adjustment grids, narrative
+> report components and XML report generation, delivering appraisals across all 50 U.S. states.
+
+<!--
+generated: 2026-08-08
+method: generated
+source: API Evangelist enrichment pipeline, from all/bowery-valuation/apis.yml and live probes of
+        www.boweryvaluation.com (2026-08-08). Bowery Valuation publishes no llms.txt of its own
+        (https://www.boweryvaluation.com/llms.txt -> 404).
+-->
+
+## Important: no public API
+
+Bowery Valuation does **not** publish a public API, SDK, developer portal, or machine-readable
+API contract (no OpenAPI, AsyncAPI, GraphQL SDL, Postman collection, or `.well-known` document).
+Its FAQ states the appraisal software is "used internally only," with "enterprise partnerships"
+as the route for outside organizations. The customer/appraiser application at
+`app.boweryvaluation.com` answers `401` to every anonymous request, including `/` and every
+`.well-known/` path.
+
+Do not infer, generate, or call endpoints for this company. There is no published contract to
+ground them in.
+
+## What Bowery does
+
+- Commercial real estate appraisal for banks, agency (Fannie Mae / Freddie Mac) lenders, funds and
+  private lenders.
+- Asset types: multifamily, mixed-use, office, retail, industrial and warehouse, self-storage,
+  condo and co-op, affordable housing, land and development sites, ground-up construction.
+- Coverage: all 50 U.S. states, with offices concentrated in NY, CA, CO, FL, GA, IL, IN, MA, NJ,
+  NC, PA, WA, DC and WI.
+- Compliance posture stated publicly: state-certified appraisers trained to USPAP, FIRREA and GSE
+  guidelines, with compliance checks built into the platform.
+
+## Company
+
+- [Bowery Valuation](https://www.boweryvaluation.com/): Home.
+- [About Bowery](https://www.boweryvaluation.com/about-bowery): Company background.
+- [Our Tech](https://www.boweryvaluation.com/our-tech): The internal appraisal platform — comps
+  workflow, property photo reports, commercial income analysis, XML generation, narrative components.
+- [FAQ](https://www.boweryvaluation.com/faq): Includes the statement that the technology is
+  internal-only.
+- [Press](https://www.boweryvaluation.com/press): Company news.
+- [Get in Touch](https://www.boweryvaluation.com/contact-us): Appraisal orders and enterprise
+  partnership inquiries.
+
+## Legal
+
+- [Terms & Conditions](https://www.boweryvaluation.com/terms-conditions)
+- [Privacy Policy](https://www.boweryvaluation.com/privacy-policy)
+
+## Code and packages
+
+- [Bowery-RES on GitHub](https://github.com/Bowery-RES): The company's public GitHub organization.
+  Contents are forks of third-party libraries and internal CI/CD GitHub Actions — no API
+  specification and no client SDK.
+- `@bowery-valuation/eslint-plugin` (npm): first-party ESLint rules.
+- `@bowery-valuation/orchestrator` (npm): first-party parallel Cypress runner.
+
+## API Evangelist profile
+
+- [Domain security probe](security/bowery-valuation-domain-security.yml): TLS 1.3, HSTS enabled
+  (max-age 31536000), SPF and DMARC present (`p=none`), no DNSSEC, no CAA records.
+- [Packages](packages/bowery-valuation-packages.yml): first-party package inventory.

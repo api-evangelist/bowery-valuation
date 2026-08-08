@@ -1,0 +1,85 @@
+generated: '2026-08-08'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=bowery + https://github.com/Bowery-RES
+name: Bowery Valuation Packages
+description: >-
+  First-party packages published by Bowery Valuation to public registries. Bowery
+  publishes no API client SDK, because it publishes no public API — the packages
+  below are internal engineering tooling the company happens to release publicly
+  under its own @bowery-valuation npm scope. They are recorded here as verified
+  first-party artifacts, NOT as API client libraries.
+summary:
+  official_packages: 2
+  api_client_sdks: 0
+  registries_searched:
+  - npm
+  - PyPI
+  - Maven Central
+  - NuGet
+  - pkg.go.dev
+  - RubyGems
+  - Packagist
+  - crates.io
+  note: >-
+    Only npm returned first-party results. PyPI lookups for `bowery-valuation` and
+    `boweryvaluation` returned 404. No provider docs or SDK page exists to derive
+    candidates from.
+packages:
+- name: '@bowery-valuation/eslint-plugin'
+  registry: npm
+  url: https://www.npmjs.com/package/@bowery-valuation/eslint-plugin
+  version: 1.1.1
+  language: javascript
+  license: ISC
+  official: true
+  kind: developer-tooling
+  api_client: false
+  description: Bowery Valuation's custom ESLint rules.
+  repository: https://github.com/Bowery-RES/bowery-toolkit
+  repository_public: false
+  repository_note: >-
+    Repository URL is taken verbatim from the npm manifest; the repo itself returns
+    404 to anonymous requests (private within the Bowery-RES organization).
+  last_published: '2026-01-05'
+  evidence:
+    fetched: '2026-08-08'
+    url: https://registry.npmjs.org/@bowery-valuation%2Feslint-plugin
+    http_status: 200
+    first_party_signal: >-
+      Published under the @bowery-valuation npm scope; maintainers include
+      accounts on the boweryvaluation domain; repository points at the
+      Bowery-RES GitHub organization.
+- name: '@bowery-valuation/orchestrator'
+  registry: npm
+  url: https://www.npmjs.com/package/@bowery-valuation/orchestrator
+  version: 2.8.1
+  language: javascript
+  license: MIT
+  official: true
+  kind: developer-tooling
+  api_client: false
+  description: >-
+    Execute Cypress specs in parallel across multiple docker containers. Forked
+    from https://github.com/0xIslamTaha/orchestrator and republished under the
+    Bowery Valuation scope.
+  repository: https://github.com/Bowery-RES/orchestrator
+  last_published: '2026-01-05'
+  evidence:
+    fetched: '2026-08-08'
+    url: https://registry.npmjs.org/@bowery-valuation%2Forchestrator
+    http_status: 200
+    first_party_signal: Published under the @bowery-valuation npm scope by Bowery engineers.
+excluded:
+- name: aws-textract-json-parser
+  registry: npm
+  reason: >-
+    Present as a fork in the Bowery-RES GitHub organization, but the npm package is
+    owned and maintained by an unrelated third party (maintainer `snymanje`, repo
+    github.com/snymanje/aws-textract-json-parser). Not first-party to Bowery.
+  official: false
+- name: bowery / bowery-models / bowery-cache
+  registry: npm
+  reason: >-
+    Name collision. These belong to the unrelated "Bowery" Node.js framework
+    (github.com/Bowery), not to Bowery Valuation.
+  official: false
