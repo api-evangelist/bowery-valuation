@@ -12,6 +12,17 @@ description: 'Bowery Valuation is a New York-headquartered, technology-enabled c
   API, SDK or developer portal, and directs external technology interest to enterprise
   partnership conversations.'
 url: https://raw.githubusercontent.com/api-evangelist/bowery-valuation/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/5cc9fe0737d849c4f294ae53/5d420360f65670868b8351d7_banner_illustration_svg.svg
 x-type: company
 x-source: harvest:secondary-market
