@@ -45,7 +45,7 @@ created: '2026-08-08'
 modified: '2026-08-08'
 tags:
 - Company
-- Real-Estate
+- Real Estate
 - Commercial Real Estate
 - Appraisal
 - Valuation
@@ -61,6 +61,7 @@ tags_raw:
 - Property Data
 - Proptech
 - Lending
+- Real-Estate
 apis: []
 maintainers:
 - FN: Kin Lane
